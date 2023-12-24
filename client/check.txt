@@ -1,0 +1,31 @@
+
+
+
+
+//this is Login.jsx file
+
+
+
+
+
+//intothe Signup()
+const [name, setName] = useState()
+    const [email, setEmail] = useState()
+    const [password, setPassword] = useState()
+    const handleSumbit = (e) => {
+        e.preventDefault()
+        axios.post('',{name, email, password})
+        .then(result => console.log(result))
+        .catch(err => console.log(err))
+    }
+
+    onChange={(e) => setName(e.target.value)}
+
+    onChange={(e) => setEmail(e.target.value)}
+
+     onChange={(e) => setPassword(e.target.value)}
+
+     Link to="/login"
+
+
+     from intothe onSubmit={handleSumbit}
